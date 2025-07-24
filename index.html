@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food&Co - A sua disciplina, entregue.</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Definição das nossas fontes e cores personalizadas */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1A1A1A; /* Grafite Focado */
+            color: #F5F5F5; /* Branco Gelo */
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .bg-grafite-focado { background-color: #1A1A1A; }
+        .bg-cinza-estrutural { background-color: #404040; }
+        .bg-verde-performance { background-color: #00FF7F; }
+        .text-verde-performance { color: #00FF7F; }
+        .text-grafite-focado { color: #1A1A1A; }
+        .text-branco-gelo { color: #F5F5F5; }
+        .border-verde-performance { border-color: #00FF7F; }
+        
+        /* Efeito de overlay escuro para a imagem de herói */
+        .hero-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 26, 26, 0.7);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-grafite-focado">
+
+    <!-- ===== SEÇÃO 1: A PROMESSA (ACIMA DA DOBRA) ===== -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center text-center p-4 hero-overlay bg-cover bg-center bg-no-repeat" style="background-image: url('https://placehold.co/1920x1080/1A1A1A/404040?text=Atleta+Focado');">
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h1 class="font-montserrat font-black text-4xl md:text-6xl lg:text-7xl leading-tight">
+                A sua disciplina no ginásio é de 100%. <span class="text-verde-performance">E na cozinha?</span>
+            </h1>
+            <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto text-gray-300">
+                Tenha acesso a refeições de alta performance, com macros calculados, através do nosso Aplicativo. O combustível que os seus resultados exigem, na palma da sua mão.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#" class="bg-white text-black font-bold py-3 px-6 rounded-lg flex items-center gap-3 hover:bg-gray-200 transition-transform transform hover:scale-105">
+                    <img src="https://placehold.co/24x24/000000/FFFFFF?text=A" alt="Logótipo da Apple" class="w-6 h-6 rounded-sm">
+                    <div>
+                        <span class="text-xs">Baixar na</span><br>
+                        <span class="text-lg">App Store</span>
+                    </div>
+                </a>
+                <a href="#" class="bg-white text-black font-bold py-3 px-6 rounded-lg flex items-center gap-3 hover:bg-gray-200 transition-transform transform hover:scale-105">
+                    <img src="https://placehold.co/24x24/000000/FFFFFF?text=G" alt="Logótipo do Google Play" class="w-6 h-6 rounded-sm">
+                    <div>
+                        <span class="text-xs">Disponível no</span><br>
+                        <span class="text-lg">Google Play</span>
+                    </div>
+                </a>
+            </div>
+            <p class="mt-6 text-sm text-gray-400">
+                Baixe o App e use o código <strong class="text-verde-performance">FOCOTOTAL</strong> no seu primeiro pedido para ganhar 50% OFF + Entrega Grátis.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO 2: O PROBLEMA (CONEXÃO COM A DOR) ===== -->
+    <section id="problema" class="py-20 px-4 bg-black">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="font-montserrat font-bold text-3xl md:text-4xl">Você treina como um atleta. <br>Mas a sua nutrição ainda é um improviso?</h2>
+                <p class="mt-6 text-lg text-gray-400">
+                    Você dedica horas no ginásio, segue o plano de treinos à risca, mas quando chega a hora de comer, a falta de tempo e o cansaço falam mais alto. Pedir qualquer coisa ou saltar refeições está a sabotar silenciosamente todo o seu esforço. Cada refeição desalinhada é um passo para trás.
+                </p>
+            </div>
+            <div>
+                <!-- IMAGEM REVERTIDA PARA PLACEHOLDER -->
+                <img src="https://placehold.co/600x400/1A1A1A/404040?text=Frigor%C3%ADfico+Vazio" alt="Frigorífico vazio representando a frustração com a dieta" class="rounded-lg shadow-2xl mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO 3: A SOLUÇÃO É UMA APP (FUNCIONALIDADES) ===== -->
+    <section id="solucao" class="py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="font-montserrat font-bold text-3xl md:text-4xl mb-4">O Ecossistema Food&Co.</h2>
+            <p class="text-lg text-verde-performance font-semibold mb-12">A sua disciplina, na palma da sua mão.</p>
+            <div class="grid md:grid-cols-3 gap-10 items-center">
+                <!-- Funcionalidades à esquerda -->
+                <div class="space-y-8 text-center md:text-right">
+                    <div class="feature-item">
+                        <h3 class="font-montserrat font-bold text-xl mb-2">Planeamento Inteligente</h3>
+                        <p class="text-gray-400">Monte o seu plano de refeições semanal em minutos, escolha os seus pratos favoritos e deixe o resto com a gente.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3 class="font-montserrat font-bold text-xl mb-2">Acompanhe os seus Macros</h3>
+                        <p class="text-gray-400">Veja o total de proteínas, carboidratos e gorduras de cada refeição e do seu dia, diretamente no Aplicativo.</p>
+                    </div>
+                </div>
+                <!-- Imagem do Smartphone -->
+                <div class="px-8">
+                    <!-- IMAGEM REVERTIDA PARA PLACEHOLDER -->
+                    <img src="https://placehold.co/300x600/000000/FFFFFF?text=Ecr%C3%A3+da+App" alt="Ecrãs da aplicação Food&Co num smartphone" class="mx-auto max-h-[500px]">
+                </div>
+                <!-- Funcionalidades à direita -->
+                <div class="space-y-8 text-center md:text-left">
+                     <div class="feature-item">
+                        <h3 class="font-montserrat font-bold text-xl mb-2">Entregas Flexíveis</h3>
+                        <p class="text-gray-400">Programe, pause ou altere as suas entregas para se alinharem perfeitamente com a sua rotina. Controle total.</p>
+                    </div>
+                     <div class="feature-item">
+                        <h3 class="font-montserrat font-bold text-xl mb-2">Suporte Exclusivo</h3>
+                        <p class="text-gray-400">Tenha acesso a dicas dos nossos nutricionistas e a um suporte dedicado através do Aplicativo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO 4: PROVA SOCIAL (DEPOIMENTOS) ===== -->
+    <section id="depoimentos" class="py-20 px-4 bg-black">
+        <div class="container mx-auto text-center">
+            <h2 class="font-montserrat font-bold text-3xl md:text-4xl mb-12">O que os nossos atletas dizem:</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-grafite-focado p-8 rounded-lg border border-cinza-estrutural text-left">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/F5F5F5/1A1A1A?text=JP" class="w-14 h-14 rounded-full mr-4" alt="Foto do cliente João P.">
+                        <div>
+                            <h4 class="font-bold text-lg">João P.</h4>
+                            <p class="text-sm text-verde-performance">Foco em Hipertrofia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"O App da Food&Co mudou o jogo. Planejar a semana é fácil, e ter a comida certa a chegar na hora certa eliminou todas as minhas desculpas."</p>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="bg-grafite-focado p-8 rounded-lg border border-cinza-estrutural text-left">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/F5F5F5/1A1A1A?text=MA" class="w-14 h-14 rounded-full mr-4" alt="Foto da cliente Maria A.">
+                        <div>
+                            <h4 class="font-bold text-lg">Maria A.</h4>
+                            <p class="text-sm text-verde-performance">Performance e Emagrecimento</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Finalmente uma solução que entende a minha rotina. A qualidade da comida é incrível e o App é super intuitivo. Recomendo 100%!"</p>
+                </div>
+                <!-- Depoimento 3 -->
+                <div class="bg-grafite-focado p-8 rounded-lg border border-cinza-estrutural text-left">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/F5F5F5/1A1A1A?text=RF" class="w-14 h-14 rounded-full mr-4" alt="Foto do cliente Ricardo F.">
+                        <div>
+                            <h4 class="font-bold text-lg">Ricardo F.</h4>
+                            <p class="text-sm text-verde-performance">Atleta de Crossfit</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Consistência é tudo no Crossfit. A Food&Co garante que a minha nutrição esteja sempre alinhada, sem stress. Os resultados falam por si."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO 5: OFERTA E URGÊNCIA ===== -->
+    <section id="oferta" class="py-20 px-4 text-center bg-verde-performance text-grafite-focado">
+        <div class="container mx-auto">
+            <h2 class="font-montserrat font-black text-3xl md:text-5xl">Instale a disciplina. <br>Desbloqueie a sua oferta de lançamento.</h2>
+            <p class="mt-4 text-lg max-w-2xl mx-auto">A consistência é a chave. Para o ajudar a começar, a sua primeira encomenda através do Aplicativo tem um desconto especial.</p>
+            <!-- CAIXA DA OFERTA COM CONTRASTE MELHORADO -->
+            <div class="my-8 bg-black/30 p-6 rounded-lg inline-block">
+                <p class="font-bold text-2xl text-branco-gelo">Primeiro Pedido com 50% de Desconto + Entrega Grátis</p>
+                <div id="countdown" class="text-4xl font-montserrat font-bold my-4 text-branco-gelo"></div>
+                <p class="text-sm mb-2 font-semibold text-branco-gelo">Oferta válida para novos usuários do App</p>
+            </div>
+            <br>
+            <a href="#home" class="bg-grafite-focado text-branco-gelo font-bold py-4 px-10 rounded-lg text-xl hover:bg-black transition-transform transform hover:scale-105 inline-block mt-4">
+                BAIXAR AGORA E GARANTIR 50% OFF
+            </a>
+        </div>
+    </section>
+    
+    <!-- ===== SEÇÃO 6: RODAPÉ ===== -->
+    <footer class="bg-black py-12 px-4 text-center text-gray-400">
+        <div class="container mx-auto">
+             <div class="flex items-center justify-center space-x-2 mb-6">
+                <svg class="h-8 w-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <polygon fill="#F5F5F5" points="50,0 93.3,25 93.3,75 50,100 6.7,75 6.7,25"/>
+                    <path fill="#1A1A1A" d="M40,30 L60,30 L60,50 L70,50 L50,80 L30,50 L40,50 Z" transform="rotate(10 50 50)"/>
+                </svg>
+                <span class="font-montserrat font-black text-2xl text-branco-gelo">FOOD<span class="text-verde-performance">&</span>CO</span>
+            </div>
+            <p class="mb-4">A sua disciplina, entregue.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="hover:text-verde-performance">Instagram</a>
+                <a href="#" class="hover:text-verde-performance">Perguntas Frequentes</a>
+                <a href="#" class="hover:text-verde-performance">Contato</a>
+            </div>
+            <p class="text-sm">&copy; 2025 Food&Co. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Adiciona um listener que espera o DOM estar completamente carregado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simples script para o contador regressivo
+            function startCountdown() {
+                const countdownElement = document.getElementById('countdown');
+                if (!countdownElement) return;
+
+                // Para garantir que o contador reinicia a cada visita para fins de demonstração
+                let endTime;
+                const storedEndTime = localStorage.getItem('countdownEndTime');
+                
+                if (storedEndTime && new Date().getTime() < storedEndTime) {
+                    endTime = storedEndTime;
+                } else {
+                    endTime = new Date().getTime() + 24 * 60 * 60 * 1000; // 24 horas a partir de agora
+                    localStorage.setItem('countdownEndTime', endTime);
+                }
+
+                const interval = setInterval(() => {
+                    const now = new Date().getTime();
+                    const distance = endTime - now;
+
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    countdownElement.innerHTML = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+                    if (distance < 0) {
+                        clearInterval(interval);
+                        countdownElement.innerHTML = "OFERTA EXPIRADA";
+                    }
+                }, 1000);
+            }
+            
+            startCountdown();
+        });
+    </script>
+
+</body>
+</html>
